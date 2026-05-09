@@ -1,0 +1,34 @@
+@import url(global.css);
+
+header{
+    background-color: var(--color-azul);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 46px 0px;
+    gap: 139px;
+    border-bottom: 2px solid var(--color-azul);
+}
+
+.container-nav-header{
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.navigation-header ul{
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    color: var(--color-branco);
+}
+
+.btn-header{
+    font-family: var(--font-primary);
+    text-decoration: none;
+    background-color: var(--color-roxo);
+    color: var(--color-branco);
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-weight: var(--font-weight-button);
+}
