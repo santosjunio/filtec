@@ -116,3 +116,6 @@ main{
     color: var(--color-primary);
 }
 
+.control-content{
+    font-family: var(--font-primary);
+}
