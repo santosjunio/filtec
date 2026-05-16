@@ -119,3 +119,38 @@ main{
 .control-content{
     font-family: var(--font-primary);
 }
+
+/* GRAfICO */
+.section-chart{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0px 0px;
+    gap: 24px;
+    background-color: var(--color-secondary);
+}
+
+.chart-content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--color-neutral-white);
+    width: 730px;
+    gap: 16px;
+}
+.chart-content h2{
+    font-size: var(--font-size-h2);
+    font-weight: var(--font-weight-h2);
+    font-family: var(--font-family-primary);
+    height: 54px;
+    color: var(--color-white);
+}
+
+.chart-content h2 span{
+    color: var(--color-primary);
+}
+
+.chart-content p{
+    color: var(--color-white);
+}
