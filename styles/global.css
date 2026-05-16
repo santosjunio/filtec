@@ -8,9 +8,9 @@
 /* VARIAVES */
 :root{
     /* CORES */
-    --color-roxo: #9130F4;
-    --color-azul: #121139;
-    --color-branco: #F4F4F4;
+    --color-primary: #9130F4;
+    --color-secondary: #121139;
+    --color-white: #F4F4F4;
 
     /* FONTE */
     /* Tudo abaixo é o tamanho da fonte */
