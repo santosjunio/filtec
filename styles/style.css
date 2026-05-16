@@ -126,7 +126,7 @@ main{
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 60px 0px 0px;
+    padding: 60px 0;
     gap: 24px;
     background-color: var(--color-secondary);
 }
