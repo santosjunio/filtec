@@ -1,13 +1,14 @@
 @import url(global.css);
 
+/* Header */
 header{
-    background-color: var(--color-azul);
+    background-color: var(--color-secondary);
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 46px 0px;
     gap: 139px;
-    border-bottom: 2px solid var(--color-azul);
+    border-bottom: 2px solid var(--color-secondary);
 }
 
 .container-nav-header{
@@ -20,19 +21,52 @@ header{
     display: flex;
     gap: 40px;
     list-style: none;
-    color: var(--color-branco);
+    color: var(--color-white);
 }
 
 .btn-header{
     font-family: var(--font-primary);
     text-decoration: none;
-    background-color: var(--color-roxo);
-    color: var(--color-branco);
+    background-color: var(--color-primary);
+    color: var(--color-white);
     border-radius: 10px;
     padding: 10px 20px;
     font-weight: var(--font-weight-button);
 }
 
+/* MAIN */
 main{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 100px 0;
+    background-color: var(--color-secondary);
+}
+
+
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 497px;
+
+}
+
+.main-content h1{
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-h1);
+    font-family: var(--font-family-primary);
+    color: var(--color-neutral-white);
+}
+
+.main-content h1 span{
+    color: var(--color-primary);
+}
+
+.main-content p{
+    font-family: var(--font-primary);
+    font-size: var(--font-size-body);
+    font-weight: var(--font-weight-body);
+    font-family: var(--font-primary);
 }
