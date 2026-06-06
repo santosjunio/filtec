@@ -1,39 +1,43 @@
-*{
-    border: 0;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* --- RESET DO CSS --- */
+* {
+    border: 0; /* Borda do Elemento -> Zeramos */
+    margin: 0; /* Distância externa -> Zeramos */
+    padding: 0; /* Espaçamento interno -> Zeramos */
+    box-sizing: border-box; /* respeitar Largura e altura */
 }
 
-/* VARIAVES */
-:root{
-    /* CORES */
+/*  --- VARIÁVEIS CSS --- */
+:root {
+
+    /* --- Cores --- */
     --color-primary: #9130F4;
     --color-secondary: #121139;
-    --color-white: #F4F4F4;
+    --color-neutral-white: #FFFFFF;
 
-    /* FONTE */
-    /* Tudo abaixo é o tamanho da fonte */
+    /* --- FONTES --- */
+    /* -- SIZE -- */
     --font-size-h1: 54px;
     --font-size-h2: 45px;
     --font-size-h3: 35px;
-    --font-size-h4: 30px;
-    --font-size-h5: 25px;
+    --font-size-h4: 25px;
     --font-size-body: 16px;
     --font-size-button: 16px;
     --font-size-caption: 14px;
 
-    /* Tudo abaixo é espessura da fonte*/
-    --fonte-weight-h1: 700px;
-    --font-weight-h2: 700px;
-    --font-weight-h3: 700px;
-    --font-weight-h4: 500px;
-    --font-weight-h5: 500px;
-    --font-weight-body: 400px;
-    --font-weight-button: 700px;
-    --font-weight-caption: 700px;
+    /* -- WEIGHT -- */
+   --font-weight-h1: 700; /* Variável Espessura da fonte */
+    --font-weight-h2: 700; 
+    --font-weight-h3: 700; 
+    --font-weight-h4: 500; 
+    --font-weight-body: 400; 
+    --font-weight-button: 700; 
+    --font-weight-caption: 400; 
 
-    /* FAMILIA DA FONTE */
-    --font-primary: "inter", sans-serif; 
+    /* FAMILY */
+    --font-family-primary: "Inter", sans-serif; /* Variável família da fonte  */
 
+}
+
+html{
+    font-family: var(--font-family-primary);
 }
