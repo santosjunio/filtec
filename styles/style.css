@@ -1,40 +1,44 @@
-@import url(global.css);
+@import url(./global.css);
 
-/* Header */
 header{
     background-color: var(--color-secondary);
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    padding: 46px 0px;
+    padding: 46px 0;
     gap: 139px;
-    border-bottom: 2px solid var(--color-secondary);
+    border-bottom: 2px solid var(--color-primary);
 }
 
 .container-nav-header{
     display: flex;
     align-items: center;
-    gap: 70px;
+    gap: 139px;
 }
 
 .navigation-header ul{
     display: flex;
-    gap: 40px;
+    gap: 45px;
     list-style: none;
-    color: var(--color-white);
+}
+
+.navigation-header ul li a{
+    text-decoration: none;
+    color: var(--color-neutral-white);
 }
 
 .btn-header{
-    font-family: var(--font-primary);
+    font-family: var(--font-family-primary);
     text-decoration: none;
     background-color: var(--color-primary);
-    color: var(--color-white);
+    color: var(--color-neutral-white);
     border-radius: 10px;
     padding: 10px 20px;
     font-weight: var(--font-weight-button);
 }
 
-/* MAIN */
+/* --------------- MAIN --------------- */
+
 main{
     display: flex;
     justify-content: center;
@@ -44,13 +48,11 @@ main{
     background-color: var(--color-secondary);
 }
 
-
-.main-content{
+.main-content {
     display: flex;
     flex-direction: column;
     gap: 25px;
     width: 497px;
-
 }
 
 .main-content h1{
@@ -58,27 +60,26 @@ main{
     font-weight: var(--font-weight-h1);
     font-family: var(--font-family-primary);
     color: var(--color-neutral-white);
-    color: var(--color-white);
 }
 
 .main-content h1 span{
     color: var(--color-primary);
 }
 
-.main-content p{
-    font-family: var(--font-primary);
+.main-content p {
     font-size: var(--font-size-body);
     font-weight: var(--font-weight-body);
-    font-family: var(--font-primary);
-    color: var(--color-white);
+    font-family: var(--font-family-primary);
+    color: var(--color-neutral-white);
 }
 
 .main-content a{
-    color: var(--color-white);
-    text-decoration: none;
+    display: flex;
+    justify-content: center;
     padding: 10px 25px;
     gap: 10px;
     border-radius: 8px;
+    color: var(--color-neutral-white);
     border: 1px solid var(--color-primary);
     text-decoration: none;
     font-weight: var(--font-weight-button);
@@ -86,20 +87,20 @@ main{
     align-self: flex-start;
 }
 
-/* SECTION CONTROL */
-.section-control{
+/* --------------- Section CONTROL --------------- */
+
+.section-control {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 100px;
     padding: 60px 0;
-    width: 1280px;
+    width: 1280xpx;
     height: 674px;
     margin-left: 150px;
-    font-family: var(--font-primary);
 }
 
-.control-content{
+.control-content {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -109,24 +110,20 @@ main{
 .control-content h2{
     font-size: var(--font-size-h2);
     font-weight: var(--font-weight-h2);
-    font-family: var(--font-primary);
+    font-family: var(--font-family-primary);
 }
 
 .control-content h2 span{
     color: var(--color-primary);
 }
 
-.control-content{
-    font-family: var(--font-primary);
-}
-
-/* GRAfICO */
+/* ----- Section Chart ----- */
 .section-chart{
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    padding: 60px 0;
+    padding: 60px 0px;
     gap: 24px;
     background-color: var(--color-secondary);
 }
@@ -136,7 +133,7 @@ main{
     flex-direction: column;
     text-align: center;
     color: var(--color-neutral-white);
-    width: 730px;
+    width: 700px;
     gap: 16px;
 }
 .chart-content h2{
@@ -144,27 +141,21 @@ main{
     font-weight: var(--font-weight-h2);
     font-family: var(--font-family-primary);
     height: 54px;
-    color: var(--color-white);
 }
 
 .chart-content h2 span{
     color: var(--color-primary);
 }
 
-.chart-content p{
-    color: var(--color-white);
-}
-
-/* FOOTER */
-
+/* Footer */
 footer{
     display: flex;
     justify-content: space-evenly;
     background-color: var(--color-secondary);
-    color: var(--color-white);
+    color: var(--color-neutral-white);
     padding: 80px 0;
     gap: 126px;
-    border-top: 1px solid var(--color-secondary);
+    border-top: 1px solid var(--color-neutral-white);
 }
 
 .content-footer{
@@ -180,14 +171,14 @@ footer{
 }
 
 .quick-links h2{
-    font-family: var(--font-primary);
+    font-family: var(--font-family-primary);
     font-size: var(--font-size-body);
 }
 
 .content-links ul{
     display: flex;
     flex-direction: column;
-    gap: 12px; 
+    gap: 12px;
 }
 
 .content-links li{
@@ -196,10 +187,10 @@ footer{
 
 .content-links a{
     text-decoration: none;
-    color: var(--color-primary);
-    font-family: var(--font-primary);
+    color: var(--color-neutral-white);
+    font-family: var(--font-family-primary);
     font-size: var(--font-size-body);
-    color: var(--color-white);
+    transition: 0.3s;
 }
 
 .footer-subscribe{
@@ -209,7 +200,7 @@ footer{
 }
 
 .footer-subscribe h2{
-    font-family: var(--font-primary);
+    font-family: var(--font-family-primary);
     font-size: var(--font-size-button);
     font-weight: var(--font-weight-button);
     width: 198px;
@@ -220,11 +211,12 @@ form{
     justify-content: space-between;
     width: 385px;
     border-bottom: 1px solid #4d4d4d;
-    padding-bottom: 16px 0;
+    padding-bottom: 16px;
 }
 
 input{
     background-color: transparent;
+    color: var(--color-neutral-white);
 }
 
 .footer-subscribe button{
@@ -236,5 +228,195 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+    transition: 0.3s;
 }
 
+.footer-subscribe button:hover{
+    transform: scale(1.05);
+}
+
+/* ==========================================
+   RESPONSIVIDADE — 884px e 480px
+   Adicione ao final do styles.css
+   ========================================== */
+
+/* --------- TABLET (≤ 884px) --------- */
+@media (max-width: 884px) {
+
+  /* Header */
+  header {
+    gap: 32px;
+    padding: 32px 24px;
+  }
+
+  .container-nav-header {
+    gap: 24px;
+  }
+
+  .navigation-header ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  /* Main */
+  main {
+    flex-direction: column;
+    padding: 60px 24px;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .main-content {
+    width: 500px;
+    align-items: center;
+  }
+
+  .main-content p{
+    width: 375px;
+  }
+
+  .main-content a {
+    align-self: center;
+  }
+
+  main img {
+    max-width: 460px;
+  }
+
+  /* Section Control */
+  .section-control {
+    flex-direction: column;
+    height: auto;
+    margin-left: 0;
+    padding: 60px 24px;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .section-control img {
+    width: 100%;
+    max-width: 460px;
+  }
+
+  .control-content {
+    width: 100%;
+  }
+
+  /* Section Chart */
+  .section-chart {
+    padding: 60px 24px;
+  }
+
+  .chart-content {
+    width: 100%;
+  }
+
+  .section-chart img {
+    width: 100%;
+  }
+
+  /* Footer */
+  footer {
+    flex-direction: column-reverse;
+    align-items: center;
+    gap: 48px;
+    padding: 60px 24px;
+    text-align: center;
+  }
+
+  .content-footer {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .footer-subscribe {
+    align-items: center;
+  }
+
+  form {
+    width: 100%;
+    max-width: 385px;
+  }
+}
+
+/* --------- MOBILE (≤ 480px) --------- */
+@media (max-width: 480px) {
+
+  /* Tipografia */
+  :root {
+    --font-size-h1: 36px;
+    --font-size-h2: 28px;
+    --font-size-h3: 22px;
+  }
+
+  /* Header */
+  header {
+    padding: 24px 16px;
+    gap: 24px;
+  }
+
+  .navigation-header ul {
+    gap: 16px;
+  }
+
+  .btn-header {
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Main */
+  main {
+    padding: 48px 16px;
+    gap: 32px;
+  }
+
+  /* Section Control */
+  .section-control {
+    padding: 48px 16px;
+    gap: 32px;
+  }
+
+  .control-content {
+    gap: 20px;
+  }
+
+  /* Section Chart */
+  .section-chart {
+    padding: 48px 16px;
+  }
+
+  .chart-content {
+    gap: 12px;
+  }
+
+  .chart-content h2 {
+    height: auto;
+  }
+
+  /* Footer */
+  footer {
+    display: flex;
+    flex-direction: column;
+    padding: 48px 16px;
+    gap: 40px;
+  }
+
+  .content-footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+
+  form {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .footer-subscribe h2 {
+    width: auto;
+    text-align: center;
+  }
+}
